@@ -44,7 +44,7 @@ public class PageRequestDTO {
 
     public int getCountEnd(){
 
-        int temp = (int)(Math.ceil(this.page/10.0)) *100;
+        int temp = (int)(Math.ceil(this.page/10.0)) * (10*size);
 
         return temp+1;
     }
